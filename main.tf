@@ -7,8 +7,7 @@ provider "aws" {
 resource "aws_instance" "one" {
   ami = "ami-0aa7d40eeae50c9a9"
   instance_type = "t2.micro"
-  key_name = "project"
-  availability_zone = "us-east-1"
+  key_name = "project"  
   tags = {
     Name = "thiru-tf"
   }
