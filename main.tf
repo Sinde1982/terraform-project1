@@ -1,13 +1,14 @@
 provider "aws" {
-  region = "us-east-1"
-  access_key = "AKIA4QWKOSZ7BVC76L5B"
-  secret_key = "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"
+  region = "us-east-2"
+  access_key = "AKIA4QWKOSZ7ALJ7CPHP"
+  secret_key = "3KpiiL40yeC7iNLNkSDMNuX49yZdlRQ5Nn/1M9x3"
 }
 
 resource "aws_instance" "example" {
-  ami = "ami-0aa7d40eeae50c9a9"
+  ami = "ami-05bfbece1ed5beb54"
   instance_type = "t2.micro"
-  key_name = "project"  
+  key_name = "Jenkins" 
+  availability_zone = "us-east-2b"
   tags = {
     Name = "thiru-tf"
   }
